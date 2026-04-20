@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SwiftHaul Logistics</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="swiftHaul.png" alt="SwiftHaul Logo">
+    </div>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#services">Services</a>
+      <a href="#track">Track</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="nav-btn">Get Started</button>
+  </header>
+
+  <!-- 🚗 Uber-Style App UI -->
+  <section class="app-ui">
+
+    <!-- Map Background -->
+    <div class="map"></div>
+
+    <!-- Booking Card -->
+    <div class="booking-card fade-in">
+      <h2>Book a Delivery</h2>
+
+      <input type="text" placeholder="📍 Pickup Location">
+      <input type="text" placeholder="📦 Drop-off Location">
+
+      <select>
+        <option>Bike (Small items)</option>
+        <option>Van (Medium goods)</option>
+        <option>Truck (Bulk delivery)</option>
+      </select>
+
+      <button onclick="bookDelivery()">Request Rider</button>
+
+      <p id="bookingStatus"></p>
+    </div>
+
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="services fade-in">
+    <h2>Our Services</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>🚚 Local Delivery</h3>
+        <p>Same-day delivery within major cities.</p>
+      </div>
+      <div class="card">
+        <h3>📦 Warehousing</h3>
+        <p>Secure storage for your goods.</p>
+      </div>
+      <div class="card">
+        <h3>⚡ Express Shipping</h3>
+        <p>Fast nationwide delivery.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tracking -->
+  <section id="track" class="track fade-in">
+    <h2>Track Your Shipment</h2>
+    <div class="track-box">
+      <input type="text" id="trackingInput" placeholder="Enter Tracking ID">
+      <button onclick="trackShipment()">Track</button>
+    </div>
+    <p id="result"></p>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta fade-in">
+    <h2>Ready to Ship?</h2>
+    <p>Join hundreds of businesses using SwiftHaul.</p>
+    <button>Get Started</button>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="fade-in" style="padding: 60px; text-align:center;">
+    <h2>Contact Us</h2>
+    <p>Email: info@swifthaul.com</p>
+    <p>Phone: +234 800 000 0000</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 SwiftHaul Logistics</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
